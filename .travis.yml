@@ -1,5 +1,9 @@
 language: node_js
-node_js: ["6"]
+
+node_js:
+  - "10"
+  - "12"
+  - "14"
 
 install:
   - npm install
@@ -8,6 +12,8 @@ script:
   - npm run lint
   - npm run build
   - npm run test:build
+
+after_success: test -z true || npm run coverage
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
