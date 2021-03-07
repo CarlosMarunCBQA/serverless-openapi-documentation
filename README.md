@@ -7,7 +7,7 @@
 
 Generates [**OpenAPI 3.0.0**](https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/3.0.0.md)(swagger) documentation from serverless configuration files. 
 
-This project is a fork from conqa/serverless-openapi-documentation OpenAPIand the configuration is inspired by the format used in [serverless-aws-documentation](https://www.npmjs.com/package/serverless-aws-documentation).
+This project is a fork from conqa/serverless-openapi-documentation OpenAPI and the configuration is inspired by the format used in [serverless-aws-documentation](https://www.npmjs.com/package/serverless-aws-documentation).
 
 Works well with [ReDoc](https://github.com/Rebilly/ReDoc).
 
