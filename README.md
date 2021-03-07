@@ -2,6 +2,8 @@
 
 [![NPM](https://img.shields.io/npm/v/@skybrasil/serverless-openapi-documentation.svg)](https://npmjs.org/packages/@skybrasil/serverless-openapi-documentation/)
 [![Travis CI](https://img.shields.io/travis/MozartLino/serverless-openapi-documentation.svg)](https://travis-ci.org/MozartLino/serverless-openapi-documentation)
+[![Coverage Status](https://coveralls.io/repos/github/MozartLino/serverless-openapi-documentation/badge.svg?branch=master)](https://coveralls.io/github/MozartLino/serverless-openapi-documentation?branch=master)
+
 
 Generates [**OpenAPI 3.0.0**](https://github.com/OAI/OpenAPI-Specification/blob/3.0.0/versions/3.0.0.md)(swagger) documentation from serverless configuration files. 
 
