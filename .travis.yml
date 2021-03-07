@@ -13,14 +13,14 @@ script:
   - npm run build
   - npm run test:build
 
-after_success: test -z true || npm run coverage
+after_success: test -z "true" || npm run coverage
 
-before_deploy:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+# before_deploy:
+#   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
 
-deploy:
-  - provider: script
-    skip_cleanup: true
-    script: npm run release
-    on:
-      tags: true
+# deploy:
+#   - provider: script
+#     skip_cleanup: true
+#     script: npm run release
+#     on:
+#       tags: true
