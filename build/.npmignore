@@ -1,0 +1,9 @@
+**/__tests__/**
+.*
+tslint.json
+tsconfig.json
+jest.config.js
+yarn.lock
+scripts/
+test/
+src/
