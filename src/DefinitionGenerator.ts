@@ -354,21 +354,23 @@ export class DefinitionGenerator {
   private getResponseContent(response) {
     const content = {};
 
-    for (const responseKey of Object.keys(response)) {
-      const responseModel = this.config.models.find(
-        model => model.name === response[responseKey],
-      );
+    if (response) {
+      for (const responseKey of Object.keys(response)) {
+        const responseModel = this.config.models.find(
+          model => model.name === response[responseKey],
+        );
 
-      if (responseModel) {
-        const resModelConfig = {
-          schema: {
-            $ref: `#/components/schemas/${response[responseKey]}`,
-          },
-        };
+        if (responseModel) {
+          const resModelConfig = {
+            schema: {
+              $ref: `#/components/schemas/${response[responseKey]}`,
+            },
+          };
 
-        this.attachExamples(responseModel, resModelConfig);
+          this.attachExamples(responseModel, resModelConfig);
 
-        _.merge(content, { [responseKey]: resModelConfig });
+          _.merge(content, { [responseKey]: resModelConfig });
+        }
       }
     }
 
