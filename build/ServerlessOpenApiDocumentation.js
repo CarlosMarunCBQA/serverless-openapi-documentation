@@ -52,6 +52,10 @@ class ServerlessOpenApiDocumentation {
                 },
             },
         };
+        this.serverless.configSchemaHandler.defineFunctionEventProperties('aws', 'http', {
+            properties: { documentation: { type: 'object' } },
+            required: ['documentation'],
+        });
         // Declare the hooks our plugin is interested in
         this.hooks = {
             'openapi:generate:serverless': this.generate.bind(this),
