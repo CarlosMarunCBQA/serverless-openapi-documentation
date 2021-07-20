@@ -18,6 +18,7 @@ interface Variables {
     service: Service;
 }
 interface FullServerless extends Serverless {
+    configSchemaHandler: any;
     variables: Variables;
     processedInput: ProcessedInput;
 }
