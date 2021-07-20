@@ -85,7 +85,6 @@ export class ServerlessOpenApiDocumentation {
       'http',
       {
         properties: { documentation: { type: 'object' } },
-        required: ['documentation'],
       },
     );
 
